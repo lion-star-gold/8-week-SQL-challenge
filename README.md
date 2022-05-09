@@ -3,9 +3,11 @@ This repository contains my code for the 8 week SQL challenges. Please find the 
 
 ## Contents 
   
-Case Study 1 - Danny's Diner<br>
-Case Study 2 - Pizza Runner
+Case Study 1 - Danny's Diner 🧆<br>
+Case Study 2 - Pizza Runner 🍕<br>
 
-### Case Study 1 - Danny's Diner
+
+### Case Study 1 - Danny's Diner 🧆
+<img src = 'https://8weeksqlchallenge.com/images/case-study-designs/1.png', height = 'width:128px;'>
                                                                                                 
-### Case Study 2 - Pizza Runner
+### Case Study 2 - Pizza Runner 🍕
