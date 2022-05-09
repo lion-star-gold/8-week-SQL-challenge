@@ -3,4 +3,9 @@ This repository contains my code for the 8 week SQL challenges. Please find the 
 
 ## Contents 
   
-  1. Danny's Diner
+Week 1 - Danny's Diner
+Week 2 - Pizza Runner
+
+### Week 1
+                                                                                                
+### Week 2
