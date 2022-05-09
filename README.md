@@ -3,7 +3,7 @@ This repository contains my code for the 8 week SQL challenges. Please find the 
 
 ## Contents 
   
-Case Study 1 - Danny's Diner 🧆<br>
+Case Study 1 - Danny's Diner 🍜<br>
 Case Study 2 - Pizza Runner 🍕<br>
 
 
@@ -30,5 +30,10 @@ Direct link <a href="https://8weeksqlchallenge.com/case-study-1/">here</a>, raw 
 The dataset collects details on dishes for sale, orders placed, customer details, and membership joining date. 
 
 I was able to extract information on frequency of customer visits, total spends, popular purchases, and calculate points collected by customers.
-                                                                                                
+
+For instance, customer B bought everything on the menu <b>twice</b>, having visited 6 times, and every customer purchased at least 2 bowls of ramen each. Ramen 🍜 was by far the most popular dish, with double the sales of the closest competing item, curry 🍛. The least popular was sushi.
+
+<br>
+<br>
+
 ### Case Study 2 - Pizza Runner 🍕
