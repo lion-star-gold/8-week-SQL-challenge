@@ -31,6 +31,8 @@ The dataset collects details on dishes for sale, orders placed, customer details
 
 Customer B bought everything on the menu <b>twice</b>, having visited 6 times, and every customer purchased at least 2 bowls of ramen each. Ramen 🍜 was by far the most popular dish, with double the sales of the closest competing item, curry 🍛. The least popular was sushi.
 
+Customer C never became a member. However, A and B did and respectively each bought curry and sushi first after becoming a member. Sushi was also customer B's favourite dish.
+
 <br>
 <br>
 
