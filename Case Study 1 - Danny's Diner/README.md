@@ -7,6 +7,9 @@ Danny seriously loves Japanese food so in the beginning of 2021, he decides to e
 
 Danny’s Diner is in need of your assistance to help the restaurant stay afloat - the restaurant has captured some very basic data from their few months of operation but have no idea how to use their data to help them run the business.
 
+## Entities
+<img src ="https://github.com/lion-star-gold/8-week-SQL-challenge/blob/main/Case%20Study%201%20-%20Danny's%20Diner/erd-1.PNG">
+
 ## Case Study Questions
 Each of the following case study questions can be answered using a single SQL statement:
 
