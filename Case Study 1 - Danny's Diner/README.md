@@ -11,22 +11,22 @@ Danny’s Diner is in need of your assistance to help the restaurant stay afloat
 Each of the following case study questions can be answered using a single SQL statement:
 
 1. What is the total amount each customer spent at the restaurant?
-  * b
+  * A, 76; B, 74; C, 36
 2. How many days has each customer visited the restaurant?
-  * b
+  * A, 4; B, 6; C, 2
 3. What was the first item from the menu purchased by each customer?
-  * b
+  * A, curry/sushi; B, curry; C, ramen
 4. What is the most purchased item on the menu and how many times was it purchased by all customers?
-  * b
+  * ramen, 8 purchases; curry, 4 purchases; sushi, 3 purchases
 5. Which item was the most popular for each customer?
-  * b
+  * A, ramen; B, sushi; C, ramen
 6. Which item was purchased first by the customer after they became a member?
-  * b
+  * A, curry; B, sushi
 7. Which item was purchased just before the customer became a member?
-  * b
+  * A, sushi+curry; B, sushi
 8. What is the total items and amount spent for each member before they became a member?
-  * b
+  * A, 2 items, 25 spend; B, 2 items, 40 spend
 9. If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?
-  * b
+  * A, 860 points; B, 940 points; C, 360 points
 10. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
-  * b
+  * A, 1370 points; B, 820 points
