@@ -12,7 +12,7 @@ Danny created Foodie-Fi with a data driven mindset and wanted to ensure all futu
 <img src = ''>
 
 ## Case Study Questions
-A. Customer Journey
+### A. Customer Journey
 Of the 8 unique customers who signed up for the streaming service, 2 decided to leave. Customer 11 churned immediately and no further plans were bought, while Customer 15 bought 1 month of pro monthly before leaving.
 Pro monthly plans were popular, with 4 customers opting for this service. Of these 8 customers, Customer 19 graduated to the pro annual service. Three customers bought the pro annual service. While one bought it straight after the trial (2), the other bought it after being a basic member for 4 months (16).
 Basic monthly plans were purchased by 3 clients, of whom 2 then purchased the pro monthly plans.
