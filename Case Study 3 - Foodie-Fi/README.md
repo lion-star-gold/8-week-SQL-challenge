@@ -1,5 +1,5 @@
 # Case Study 3 - Foodie-Fi
-<img src = ''>
+<img src = 'https://github.com/lion-star-gold/8-week-SQL-challenge/blob/main/Case%20Study%203%20-%20Foodie-Fi/main_image.png' width = '400'>
 
 ## Introduction
 Subscription based businesses are super popular and Danny realised that there was a large gap in the market - he wanted to create a new streaming service that only had food related content - something like Netflix but with only cooking shows!
@@ -9,7 +9,7 @@ Danny finds a few smart friends to launch his new startup Foodie-Fi in 2020 and 
 Danny created Foodie-Fi with a data driven mindset and wanted to ensure all future investment decisions and new features were decided using data. This case study focuses on using subscription style digital data to answer important business questions.
 
 ## Entities
-<img src = ''>
+<img src = 'https://github.com/lion-star-gold/8-week-SQL-challenge/blob/main/Case%20Study%203%20-%20Foodie-Fi/entities.PNG'>
 
 ## Case Study Questions
 ### A. Customer Journey
