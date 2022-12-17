@@ -16,3 +16,17 @@ Danny created Foodie-Fi with a data driven mindset and wanted to ensure all futu
 Of the 8 unique customers who signed up for the streaming service, 2 decided to leave. Customer 11 churned immediately and no further plans were bought, while Customer 15 bought 1 month of pro monthly before leaving.
 Pro monthly plans were popular, with 4 customers opting for this service. Of these 8 customers, Customer 19 graduated to the pro annual service. Three customers bought the pro annual service. While one bought it straight after the trial (2), the other bought it after being a basic member for 4 months (16).
 Basic monthly plans were purchased by 3 clients, of whom 2 then purchased the pro monthly plans.
+### B. Data Analysis Questions
+1. How many customers has Foodie-Fi ever had? 
+<b>1000.<b>
+2. What is the monthly distribution of trial plan start_date values for our dataset - use the start of the month as the group by value
+<b>Jan: 88; Feb: 68; Mar: 94; Apr: 81 ; May: 88 ; Jun: 79 ; Jul: 89 ; Aug: 88 ; Sept: 87 ; Oct: 79 ; Nov: 75 ; Dec: 84.</b>
+3. What plan start_date values occur after the year 2020 for our dataset? Show the breakdown by count of events for each plan_name
+What is the customer count and percentage of customers who have churned rounded to 1 decimal place?
+How many customers have churned straight after their initial free trial - what percentage is this rounded to the nearest whole number?
+What is the number and percentage of customer plans after their initial free trial?
+What is the customer count and percentage breakdown of all 5 plan_name values at 2020-12-31?
+How many customers have upgraded to an annual plan in 2020?
+How many days on average does it take for a customer to an annual plan from the day they join Foodie-Fi?
+Can you further breakdown this average value into 30 day periods (i.e. 0-30 days, 31-60 days etc)
+How many customers downgraded from a pro monthly to a basic monthly plan in 2020?
