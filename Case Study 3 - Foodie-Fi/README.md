@@ -18,7 +18,7 @@ Pro monthly plans were popular, with 4 customers opting for this service. Of the
 Basic monthly plans were purchased by 3 clients, of whom 2 then purchased the pro monthly plans.
 ### B. Data Analysis Questions
 1. How many customers has Foodie-Fi ever had? 
-<b>1000.<b>
+<b>1000.</b>
 2. What is the monthly distribution of trial plan start_date values for our dataset - use the start of the month as the group by value
 <b>Jan: 88; Feb: 68; Mar: 94; Apr: 81 ; May: 88 ; Jun: 79 ; Jul: 89 ; Aug: 88 ; Sept: 87 ; Oct: 79 ; Nov: 75 ; Dec: 84.</b>
 3. What plan start_date values occur after the year 2020 for our dataset? Show the breakdown by count of events for each plan_name
