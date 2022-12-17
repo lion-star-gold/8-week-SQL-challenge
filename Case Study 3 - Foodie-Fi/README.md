@@ -30,3 +30,6 @@ Basic monthly plans were purchased by 3 clients, of whom 2 then purchased the pr
 9. How many days on average does it take for a customer to an annual plan from the day they join Foodie-Fi?<br><b>not complete</b>
 10. Can you further breakdown this average value into 30 day periods (i.e. 0-30 days, 31-60 days etc)<br><b>not attempted</b>
 11. How many customers downgraded from a pro monthly to a basic monthly plan in 2020?<br><b>0</b>
+
+
+Parts C + D were not started. Now I've started using SSMS and T-SQL I'm finding it harder to flip to using SQLite in this project.
