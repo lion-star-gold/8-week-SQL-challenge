@@ -12,8 +12,6 @@ Case Study 3 - Foodie-Fi 🥑<br>
 <img src ="https://github.com/lion-star-gold/8-week-SQL-challenge/blob/main/Case%20Study%201%20-%20Danny's%20Diner/main_image.png" width="400">
 Direct link <a href="https://8weeksqlchallenge.com/case-study-1/">here</a>, raw code <a href="https://github.com/lion-star-gold/8-week-SQL-challenge/blob/main/Case%20Study%201%20-%20Danny's%20Diner/The%20Taste%20of%20Success.ipynb">here</a>.
 
-
-
 #### Insights
 The dataset collects details on dishes for sale, orders placed, customer details, and membership joining date. 
 
@@ -28,30 +26,6 @@ Customer C never became a member. However, A and B did and respectively each bou
 <img src ="https://github.com/lion-star-gold/8-week-SQL-challenge/blob/main/Case%20Study%202%20-%20Pizza%20Runner/main_image.png" width="400">
 Direct link <a href="https://8weeksqlchallenge.com/case-study-1/">here</a>, folder link <a href="https://github.com/lion-star-gold/8-week-SQL-challenge/tree/main/Case%20Study%202%20-%20Pizza%20Runner">here</a>.
 
-#### The Task - A + B
-<b>A:</b> Pizza Metrics
-1. How many pizzas were ordered?
-2. How many unique customer orders were made?
-3. How many successful orders were delivered by each runner?
-4. How many of each type of pizza was delivered?
-5. How many Vegetarian and Meatlovers were ordered by each customer?
-6. What was the maximum number of pizzas delivered in a single order?
-7. For each customer, how many delivered pizzas had at least 1 change and how many had no changes?
-8. How many pizzas were delivered that had both exclusions and extras?
-9. What was the total volume of pizzas ordered for each hour of the day?
-10. What was the volume of orders for each day of the week?
-
-🅱️: Runner and Customer Experience
-1. How many runners signed up for each 1 week period? (i.e. week starts 2021-01-01)
-2. What was the average time in minutes it took for each runner to arrive at the Pizza Runner HQ to pickup the order?
-3. Is there any relationship between the number of pizzas and how long the order takes to prepare?
-4. What was the average distance travelled for each customer?
-5. What was the difference between the longest and shortest delivery times for all orders?
-6. What was the average speed for each runner for each delivery and do you notice any trend for these values?
-7. What is the successful delivery percentage for each runner?
-
-#### Entities
-
 #### Insights
 A: 10 unique customers ordered a total of 14 pizzas, with Meat Lovers being the favourite pizza to order. Most customers ordered pizzas as-is, and 2 made alterations. The most common time to order was the late evening, with 6 orders occurring at 9 and 11 pm. The most popular day to order was Friday.
 
@@ -63,9 +37,6 @@ Direct link <a href = "https://8weeksqlchallenge.com/case-study-3/">here</a>, ra
 
 #### Insights
 
-#### Case Study
-<b>A. Customer Journey</b><br>
 Of the 8 unique customers who signed up for the streaming service, 2 decided to leave. Customer 11 churned immediately and no further plans were bought, while Customer 15 bought 1 month of pro monthly before leaving. Pro monthly plans were popular, with 4 customers opting for this service. Of these 8 customers, Customer 19 graduated to the pro annual service. Three customers bought the pro annual service. While one bought it straight after the trial (2), the other bought it after being a basic member for 4 months (16). Basic monthly plans were purchased by 3 clients, of whom 2 then purchased the pro monthly plans.
+
 <br><br>
-<b>B. Data Analysis Questions</b><br>
-Data Analysis Questions linked in project readme
