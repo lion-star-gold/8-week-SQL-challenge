@@ -33,3 +33,6 @@ Each of the following case study questions can be answered using a single SQL st
   * A, 860 points; B, 940 points; C, 360 points
 10. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
   * A, 1370 points; B, 820 points
+
+## Notes
+This work was performed in SQLite.
