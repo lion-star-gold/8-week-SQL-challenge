@@ -5,7 +5,7 @@
 text
 
 ## Entities
-<img src = "https://github.com/lion-star-gold/8-week-SQL-challenge/blob/main/Case%20Study%204%20-%20Data%20Bank/ERD.PNG" width = "400">
+<img src = "https://github.com/lion-star-gold/8-week-SQL-challenge/blob/main/Case%20Study%204%20-%20Data%20Bank/ERD.PNG">
 
 ## Case Study Questions
 ### A - Customer Nodes Exploration
