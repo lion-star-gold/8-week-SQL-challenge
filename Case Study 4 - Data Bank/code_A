@@ -1,0 +1,25 @@
+--postgresql. written using query SQL function on db-fiddle, linked on original challenge page
+
+--How many unique nodes are there on the Data Bank system?
+select count(distinct(node_id)) from data_bank.customer_nodes;
+--What is the number of nodes per region?
+select r.region_name AS Region_Name,
+    c.region_id,
+    count(node_id) AS count_of_nodes
+from data_bank.regions r
+inner join data_bank.customer_nodes c on c.region_id = r.region_id
+group by region_name, c.region_id
+order by region_id;
+
+--How many customers are allocated to each region?
+select region_name, r.region_id,
+	count(distinct(customer_id)) as count_distinct_customer_id
+from data_bank.regions r
+inner join data_bank.customer_nodes c on c.region_id = r.region_id
+group by r.region_name, r.region_id;
+--How many days on average are customers reallocated to a different node?
+SELECT round(AVG(end_date - start_date), 0) AS avg_number_of_day
+FROM customer_nodes
+WHERE end_date != '9999-12-31';
+--What is the median, 80th and 95th percentile for this same reallocation days metric for each region?
+
