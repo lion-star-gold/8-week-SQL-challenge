@@ -22,7 +22,7 @@ This case study is all about calculating metrics, growth and helping the busines
 ## Case Study Questions
 ### A - Customer Nodes Exploration
 1. How many unique nodes are there on the Data Bank system?
-   * 5
+Five unique nodes.
 2. What is the number of nodes per region?
    
 | Region Name | Region ID | Count of Nodes |
@@ -43,9 +43,10 @@ This case study is all about calculating metrics, growth and helping the busines
 |Asia|	4	|95|
 |Europe|	5|	88|
 5. How many days on average are customers reallocated to a different node?
-   * 15
+15 days on average
 6. What is the median, 80th and 95th percentile for this same reallocation days metric for each region?
    * answer
+
 ### B - Customer Transactions
 1. What is the unique count and total amount for each transaction type?
    * answer
