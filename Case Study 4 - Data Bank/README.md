@@ -13,17 +13,18 @@ text
    * 5
 2. What is the number of nodes per region?
    
-   | region_name|	region_id|	count_of_nodes|
-  |---|---|---|
-|Australia|	1	|770|
-|America|	2	|735|
-|Africa|	3	|714|
-|Asia|	4	|665|
-|Europe|	5	|616|
+| Region Name | Region ID | Count of Nodes |
+|-------------|-----------|----------------|
+| Australia   | 1         | 770            |
+| America     | 2         | 735            |
+| Africa      | 3         | 714            |
+| Asia        | 4         | 665            |
+| Europe      | 5         | 616            |
 
-| Command | Description | count_of_nodes |
+
+| region_name | region_id | count_of_nodes |
 | --- | --- | --- |
-| git status | List all new or modified files | bla |
+| Australia | 1 | 770 |
 | git diff | Show file differences that haven't been staged | bla |
 4. How many customers are allocated to each region? 
    * |region_name|	region_id|	count_distinct_customer_id|
