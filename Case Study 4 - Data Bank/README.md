@@ -20,6 +20,11 @@ text
 |Africa|	3	|714|
 |Asia|	4	|665|
 |Europe|	5	|616|
+
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
 4. How many customers are allocated to each region?
    * |region_name|	region_id|	count_distinct_customer_id|
 |Australia|	1	|110|
