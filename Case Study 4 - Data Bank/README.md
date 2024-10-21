@@ -24,7 +24,7 @@ This case study is all about calculating metrics, growth and helping the busines
 1. How many unique nodes are there on the Data Bank system?
    
 Five unique nodes.
-3. What is the number of nodes per region?
+2. What is the number of nodes per region?
    
 | Region Name | Region ID | Count of Nodes |
 |-------------|-----------|----------------|
@@ -34,7 +34,7 @@ Five unique nodes.
 | Asia        | 4         | 665            |
 | Europe      | 5         | 616            |
 
-4. How many customers are allocated to each region? 
+3. How many customers are allocated to each region? 
 
 |region_name|	region_id|	count_distinct_customer_id|
 |-----------|----------|----------------------------|
@@ -43,9 +43,10 @@ Five unique nodes.
 |Africa|	3	|102|
 |Asia|	4	|95|
 |Europe|	5|	88|
-5. How many days on average are customers reallocated to a different node?
+4. How many days on average are customers reallocated to a different node?
+
 15 days on average
-6. What is the median, 80th and 95th percentile for this same reallocation days metric for each region?
+5. What is the median, 80th and 95th percentile for this same reallocation days metric for each region?
    * answer
 
 ### B - Customer Transactions
