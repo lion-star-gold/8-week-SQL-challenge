@@ -13,6 +13,7 @@ text
    * 5
 2. What is the number of nodes per region?
    * | region_name|	region_id|	count_of_nodes|
+   * |-|-|
 |Australia|	1	|770|
 |America|	2	|735|
 |Africa|	3	|714|
