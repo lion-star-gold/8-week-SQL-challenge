@@ -22,8 +22,9 @@ This case study is all about calculating metrics, growth and helping the busines
 ## Case Study Questions
 ### A - Customer Nodes Exploration
 1. How many unique nodes are there on the Data Bank system?
+   
 Five unique nodes.
-2. What is the number of nodes per region?
+3. What is the number of nodes per region?
    
 | Region Name | Region ID | Count of Nodes |
 |-------------|-----------|----------------|
