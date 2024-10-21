@@ -21,13 +21,10 @@ text
 | Asia        | 4         | 665            |
 | Europe      | 5         | 616            |
 
-
-| region_name | region_id | count_of_nodes |
-| --- | --- | --- |
-| Australia | 1 | 770 |
-| git diff | Show file differences that haven't been staged | bla |
 4. How many customers are allocated to each region? 
-   * |region_name|	region_id|	count_distinct_customer_id|
+
+|region_name|	region_id|	count_distinct_customer_id|
+|-----------|----------|----------------------------|
 |Australia|	1	|110|
 |America|	2	|105|
 |Africa|	3	|102|
