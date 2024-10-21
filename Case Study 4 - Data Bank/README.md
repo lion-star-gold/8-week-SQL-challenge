@@ -47,7 +47,6 @@ Five unique nodes.
 
 15 days on average
 5. What is the median, 80th and 95th percentile for this same reallocation days metric for each region?
-   * answer
 
 ### B - Customer Transactions
 1. What is the unique count and total amount for each transaction type?
