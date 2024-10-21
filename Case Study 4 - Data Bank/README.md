@@ -12,23 +12,24 @@ text
 1. How many unique nodes are there on the Data Bank system?
    * 5
 2. What is the number of nodes per region?
-   * | region_name|	region_id|	count_of_nodes|
+   
+   | region_name|	region_id|	count_of_nodes|
   |-|-|
 |Australia|	1	|770|
 |America|	2	|735|
 |Africa|	3	|714|
 |Asia|	4	|665|
 |Europe|	5	|616|
-3. How many customers are allocated to each region?
+4. How many customers are allocated to each region?
    * |region_name|	region_id|	count_distinct_customer_id|
 |Australia|	1	|110|
 |America|	2	|105|
 |Africa|	3	|102|
 |Asia|	4	|95|
 |Europe|	5|	88|
-4. How many days on average are customers reallocated to a different node?
+5. How many days on average are customers reallocated to a different node?
    * 15
-5. What is the median, 80th and 95th percentile for this same reallocation days metric for each region?
+6. What is the median, 80th and 95th percentile for this same reallocation days metric for each region?
    * answer
 ### B - Customer Transactions
 1. What is the unique count and total amount for each transaction type?
