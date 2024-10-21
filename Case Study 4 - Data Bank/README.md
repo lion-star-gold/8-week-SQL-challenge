@@ -71,6 +71,7 @@ Five unique nodes.
 | 22             | 4     |
 4. What is the closing balance for each customer at the end of the month?
 Top 10 given for brevity:
+
 | customer_id | month | cumulative_amount |
 |-------------|-------|-------------------|
 | 1           | 1     | 312               |
