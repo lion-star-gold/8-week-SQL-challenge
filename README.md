@@ -6,6 +6,7 @@ This repository contains my code for the 8 week SQL challenges. Please find the 
 Case Study 1 - Danny's Diner 🍜<br>
 Case Study 2 - Pizza Runner 🍕<br>
 Case Study 3 - Foodie-Fi 🥑<br>
+Case Study 4 - Data Bank 🏦<br>
 
 
 ### Case Study 1 - Danny's Diner 🍜
