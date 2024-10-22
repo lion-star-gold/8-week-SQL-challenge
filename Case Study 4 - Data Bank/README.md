@@ -87,33 +87,5 @@ Top 10 given for brevity:
 5. What is the percentage of customers who increase their closing balance by more than 5%?
 
    This question was difficult to complete. I was unable to complete it but my thinking was to use a command of some type to calculate the next row as a percentage of the previous, grouped by customer ID, and then filter these for >5pct, and perform a quick pct calculation using the distinct amount of customer_ids.
-### C - Data Allocation Challenge
-To test out a few different hypotheses - the Data Bank team wants to run an experiment where different groups of customers would be allocated data using 3 different options:
 
-Option 1: data is allocated based off the amount of money at the end of the previous month
-Option 2: data is allocated on the average amount of money kept in the account in the previous 30 days
-Option 3: data is updated real-time
-For this multi-part challenge question - you have been requested to generate the following data elements to help the Data Bank team estimate how much data will need to be provisioned for each option:
-
-running customer balance column that includes the impact each transaction
-customer balance at the end of each month
-minimum, average and maximum values of the running balance for each customer
-Using all of the data available - how much data would have been required for each option on a monthly basis?
-* answer
-
-### D - Extra Challenge
-Data Bank wants to try another option which is a bit more difficult to implement - they want to calculate data growth using an interest calculation, just like in a traditional savings account you might have with a bank.
-
-If the annual interest rate is set at 6% and the Data Bank team wants to reward its customers by increasing their data allocation based off the interest calculated on a daily basis at the end of each day, how much data would be required for this option on a monthly basis?
-
-Special notes:
-
-Data Bank wants an initial calculation which does not allow for compounding interest, however they may also be interested in a daily compounding interest calculation so you can try to perform this calculation if you have the stamina!
-* answer
-### Extension Request
-The Data Bank team wants you to use the outputs generated from the above sections to create a quick Powerpoint presentation which will be used as marketing materials for both external investors who might want to buy Data Bank shares and new prospective customers who might want to bank with Data Bank.
-
-Using the outputs generated from the customer node questions, generate a few headline insights which Data Bank might use to market it’s world-leading security features to potential investors and customers.
-
-With the transaction analysis - prepare a 1 page presentation slide which contains all the relevant information about the various options for the data provisioning so the Data Bank management team can make an informed decision.
-* answer
+I completed sections A and B.
