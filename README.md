@@ -25,7 +25,7 @@ Customer C never became a member. However, A and B did and respectively each bou
 
 ### Case Study 2 - Pizza Runner 🍕
 <img src ="https://github.com/lion-star-gold/8-week-SQL-challenge/blob/main/Case%20Study%202%20-%20Pizza%20Runner/main_image.png" width="400">
-Direct link <a href="https://8weeksqlchallenge.com/case-study-1/">here</a>, folder link <a href="https://github.com/lion-star-gold/8-week-SQL-challenge/tree/main/Case%20Study%202%20-%20Pizza%20Runner">here</a>.
+Direct link <a href="https://8weeksqlchallenge.com/case-study-2/">here</a>, folder link <a href="https://github.com/lion-star-gold/8-week-SQL-challenge/tree/main/Case%20Study%202%20-%20Pizza%20Runner">here</a>.
 
 #### Insights
 A: 10 unique customers ordered a total of 14 pizzas, with Meat Lovers being the favourite pizza to order. Most customers ordered pizzas as-is, and 2 made alterations. The most common time to order was the late evening, with 6 orders occurring at 9 and 11 pm. The most popular day to order was Friday.
