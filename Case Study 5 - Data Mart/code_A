@@ -12,8 +12,6 @@ WHERE
   table_name = 'weekly_sales';--this snippet returns all tables column names and data types.
 
 ----
-drop table if exists clean_weekly_sales;
-
 select 
 /*concat(case when length(split_part(week_date, '/', 1)) = 1 then concat('0', split_part(week_date, '/', 1))
 			else split_part(week_date, '/', 1) end,
@@ -21,13 +19,20 @@ select
               	else split_part('31/8/20', '/', 2) end, 
               split_part('31/8/20', '/', 3)
               ) as newweekdate_coincat,*/
-	to_date(
+              
+(with clean_week_date as (select              
+	cast(
     concat(case when length(split_part(week_date, '/', 1)) = 1 then concat('0', split_part(week_date, '/', 1))
 			else split_part(week_date, '/', 1) end,
               case when length(split_part('31/8/20', '/', 2)) = 1 then concat('0', split_part('31/8/20', '/', 2))
               	else split_part('31/8/20', '/', 2) end, 
               split_part('31/8/20', '/', 3)
-              ), 'ddmmyy') as week_date
+              ) as date) as week_date from weekly_sales)
+                          
+                          
+                          
+                          
+date_part('week', week_date)
               ------START NEXT Q HERE
 into clean_weekly_sales
 from weekly_sales;
