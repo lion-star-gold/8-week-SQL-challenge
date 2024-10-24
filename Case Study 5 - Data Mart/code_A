@@ -1,1 +1,46 @@
 -- this code is written in postgresql in the dbfiddle editor linked on the challenge page
+
+SELECT
+  column_name,
+  data_type,
+  character_maximum_length,
+  is_nullable,
+  column_default
+FROM
+  information_schema.columns
+WHERE
+  table_name = 'weekly_sales';--this snippet returns all tables column names and data types.
+
+----
+drop table if exists clean_weekly_sales;
+
+/*SELECT
+  column_name,
+  data_type,
+  character_maximum_length,
+  is_nullable,
+  column_default
+FROM
+  information_schema.columns
+WHERE
+  table_name = 'weekly_sales';*/
+  
+select 
+/*concat(case when length(split_part(week_date, '/', 1)) = 1 then concat('0', split_part(week_date, '/', 1))
+			else split_part(week_date, '/', 1) end,
+              case when length(split_part('31/8/20', '/', 2)) = 1 then concat('0', split_part('31/8/20', '/', 2))
+              	else split_part('31/8/20', '/', 2) end, 
+              split_part('31/8/20', '/', 3)
+              ) as newweekdate_coincat,*/
+	to_date(
+    concat(case when length(split_part(week_date, '/', 1)) = 1 then concat('0', split_part(week_date, '/', 1))
+			else split_part(week_date, '/', 1) end,
+              case when length(split_part('31/8/20', '/', 2)) = 1 then concat('0', split_part('31/8/20', '/', 2))
+              	else split_part('31/8/20', '/', 2) end, 
+              split_part('31/8/20', '/', 3)
+              ), 'ddmmyy') as newdate
+              ------START NEXT Q HERE
+into clean_weekly_sales
+from weekly_sales;
+select distinct * --length(newweekdate_coincat) 
+from clean_weekly_sales limit 5;
