@@ -14,17 +14,6 @@ WHERE
 ----
 drop table if exists clean_weekly_sales;
 
-/*SELECT
-  column_name,
-  data_type,
-  character_maximum_length,
-  is_nullable,
-  column_default
-FROM
-  information_schema.columns
-WHERE
-  table_name = 'weekly_sales';*/
-  
 select 
 /*concat(case when length(split_part(week_date, '/', 1)) = 1 then concat('0', split_part(week_date, '/', 1))
 			else split_part(week_date, '/', 1) end,
