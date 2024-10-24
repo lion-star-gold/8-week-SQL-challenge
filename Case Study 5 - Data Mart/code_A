@@ -12,29 +12,24 @@ WHERE
   table_name = 'weekly_sales';--this snippet returns all tables column names and data types.
 
 ----
-select 
-/*concat(case when length(split_part(week_date, '/', 1)) = 1 then concat('0', split_part(week_date, '/', 1))
-			else split_part(week_date, '/', 1) end,
-              case when length(split_part('31/8/20', '/', 2)) = 1 then concat('0', split_part('31/8/20', '/', 2))
-              	else split_part('31/8/20', '/', 2) end, 
-              split_part('31/8/20', '/', 3)
-              ) as newweekdate_coincat,*/
-              
-(with clean_week_date as (select              
+with clean_date as 
+(
+select  *,             
 	cast(
     concat(case when length(split_part(week_date, '/', 1)) = 1 then concat('0', split_part(week_date, '/', 1))
 			else split_part(week_date, '/', 1) end,
               case when length(split_part('31/8/20', '/', 2)) = 1 then concat('0', split_part('31/8/20', '/', 2))
               	else split_part('31/8/20', '/', 2) end, 
               split_part('31/8/20', '/', 3)
-              ) as date) as week_date from weekly_sales)
-                          
-                          
-                          
-                          
-date_part('week', week_date)
-              ------START NEXT Q HERE
-into clean_weekly_sales
-from weekly_sales;
-select distinct * --length(newweekdate_coincat) 
-from clean_weekly_sales limit 5;
+              ) as date) as clean_week_date from weekly_sales
+)
+select clean_week_date as week_date,
+	date_part('week', clean_week_date) as week_number,
+    date_part('month', clean_week_date) as month_number,
+    date_part('year', clean_week_date) as calendar_year,
+    case when 
+
+
+from clean_date limit 5;
+
+--select * from clean_date limit 5;
