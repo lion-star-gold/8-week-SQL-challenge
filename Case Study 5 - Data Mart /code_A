@@ -1,0 +1,4 @@
+--the below code was written in postgresql in the linked dbfiddle instance from challenge page 5
+
+drop table if exists clean_weekly_sales;
+
