@@ -27,7 +27,7 @@ select
               case when length(split_part('31/8/20', '/', 2)) = 1 then concat('0', split_part('31/8/20', '/', 2))
               	else split_part('31/8/20', '/', 2) end, 
               split_part('31/8/20', '/', 3)
-              ), 'ddmmyy') as newdate
+              ), 'ddmmyy') as week_date
               ------START NEXT Q HERE
 into clean_weekly_sales
 from weekly_sales;
