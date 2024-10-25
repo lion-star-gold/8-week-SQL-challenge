@@ -40,4 +40,13 @@ Direct link <a href = "https://8weeksqlchallenge.com/case-study-3/">here</a>, ra
 
 Of the 8 unique customers who signed up for the streaming service, 2 decided to leave. Customer 11 churned immediately and no further plans were bought, while Customer 15 bought 1 month of pro monthly before leaving. Pro monthly plans were popular, with 4 customers opting for this service. Of these 8 customers, Customer 19 graduated to the pro annual service. Three customers bought the pro annual service. While one bought it straight after the trial (2), the other bought it after being a basic member for 4 months (16). Basic monthly plans were purchased by 3 clients, of whom 2 then purchased the pro monthly plans.
 
+### Case Study 4 - Data Bank 🏦
+<img src = "https://github.com/lion-star-gold/8-week-SQL-challenge/blob/main/Case%20Study%204%20-%20Data%20Bank/4_main_image.png"
+width = "400">
+Direct link <a href = "https://8weeksqlchallenge.com/case-study-4/">here</a>, folder <a href = "https://github.com/lion-star-gold/8-week-SQL-challenge/tree/main/Case%20Study%204%20-%20Data%20Bank">here</a>.
+
+#### Insights
+
+The bank operates in 5 territories, with the most distinct customers in Australia. For customers worldwide a total of 1359168 'currency' was deposited. Each customer deposited 508.86 on average, and 2671 deposits were made. 
+
 <br><br>
