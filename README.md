@@ -43,6 +43,7 @@ Of the 8 unique customers who signed up for the streaming service, 2 decided to 
 ### Case Study 4 - Data Bank 🏦
 <img src = "https://github.com/lion-star-gold/8-week-SQL-challenge/blob/main/Case%20Study%204%20-%20Data%20Bank/4_main_image.png"
 width = "400">
+
 Direct link <a href = "https://8weeksqlchallenge.com/case-study-4/">here</a>, folder <a href = "https://github.com/lion-star-gold/8-week-SQL-challenge/tree/main/Case%20Study%204%20-%20Data%20Bank">here</a>.
 
 #### Insights
