@@ -15,20 +15,16 @@ WHERE
 with clean_date as 
 (
 select  *,             
-	cast(
+	to_date(
     concat(case when length(split_part(week_date, '/', 1)) = 1 then concat('0', split_part(week_date, '/', 1))
 			else split_part(week_date, '/', 1) end,
               case when length(split_part('31/8/20', '/', 2)) = 1 then concat('0', split_part('31/8/20', '/', 2))
               	else split_part('31/8/20', '/', 2) end, 
               split_part('31/8/20', '/', 3)
-              ) as date) as clean_week_date from weekly_sales
+              ),  'DDMMYY')as clean_week_date
+  from weekly_sales
 )
-select clean_week_date as week_date,
-	date_part('week', clean_week_date) as week_number,
-    date_part('month', clean_week_date) as month_number,
-    date_part('year', clean_week_date) as calendar_year,
-    case when 
-
+select clean_week_date as week_date
 
 from clean_date limit 5;
 
