@@ -1,0 +1,6 @@
+-- this code is written in postgresql in the dbfiddle editor linked on the challenge page
+
+--what day of the week is used for each week_date value?
+select distinct to_char(clean_week_date, 'Day') as DAY_NAME, count(to_char(clean_week_date, 'Day')) as COUNT
+from clean_weekly_sales
+group by DAY_NAME order by COUNT desc
