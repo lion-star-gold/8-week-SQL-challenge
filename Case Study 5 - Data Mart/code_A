@@ -21,10 +21,23 @@ select  *,
               case when length(split_part('31/8/20', '/', 2)) = 1 then concat('0', split_part('31/8/20', '/', 2))
               	else split_part('31/8/20', '/', 2) end, 
               split_part('31/8/20', '/', 3)
-              ),  'DDMMYY')as clean_week_date
-  from weekly_sales
+              ),  'DDMMYY')as clean_week_date,
+  case when substring(segment, 2) = '1' then 'Young Adults'
+  	when substring(segment, 2) = '2' then 'Middle Aged'
+  	when substring(segment, 2) = '3' OR substring(segment, 2) = '4' then 'Retirees'
+  	else NULL end as age_band,
+  case when substring(segment, 1) ='C' then 'Couples'
+  	when substring(segment, 1) = 'F' then 'Families'
+  	else NULL end as demographic
+  
+  from weekly_sales 
 )
-select clean_week_date as week_date
+select clean_week_date as week_date,
+	date_part('week', clean_week_date) as week_number,
+    date_part('month', clean_week_date) as month_number,
+    date_part('year', clean_week_date) as calendar_year,
+    age_band,
+    demographic
 
 from clean_date limit 5;
 
