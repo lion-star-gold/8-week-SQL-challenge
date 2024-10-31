@@ -26,9 +26,10 @@ select  *,
   	when substring(segment, 2) = '2' then 'Middle Aged'
   	when substring(segment, 2) = '3' OR substring(segment, 2) = '4' then 'Retirees'
   	else NULL end as age_band,
-  case when substring(segment, 1) ='C' then 'Couples'
-  	when substring(segment, 1) = 'F' then 'Families'
-  	else NULL end as demographic
+  case when substring(segment, 1,1) ='C' then 'Couples'
+  	when substring(segment, 1,1) = 'F' then 'Families'
+  	else NULL end as demographic,
+ cast(cast(sales as float)/transactions as decimal(5,2)) as avg_transaction
   
   from weekly_sales 
 )
@@ -37,8 +38,8 @@ select clean_week_date as week_date,
     date_part('month', clean_week_date) as month_number,
     date_part('year', clean_week_date) as calendar_year,
     age_band,
-    demographic
+    demographic,
+     avg_transaction
 
 from clean_date limit 5;
-
 --select * from clean_date limit 5;
