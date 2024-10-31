@@ -45,4 +45,25 @@ from clean_date limit 5;
 --select * from clean_date limit 5;
 
 
---alternatively can use this as an inserted table by using 'DROP TABLE IF EXISTS clean_weekly_sales; and 'into clean_weekly_sales' in place of CTE commands.
+--alternatively can use this as an inserted table by using 'DROP TABLE IF EXISTS clean_weekly_sales; and 'into clean_weekly_sales' in place of CTE commands. as follows:
+DROP TABLE IF EXISTS clean_weekly_sales;
+
+select  *,             
+	to_date(
+    concat(case when length(split_part(week_date, '/', 1)) = 1 then concat('0', split_part(week_date, '/', 1))
+			else split_part(week_date, '/', 1) end,
+              case when length(split_part('31/8/20', '/', 2)) = 1 then concat('0', split_part('31/8/20', '/', 2))
+              	else split_part('31/8/20', '/', 2) end, 
+              split_part('31/8/20', '/', 3)
+              ),  'DDMMYY')as clean_week_date,
+  case when substring(segment, 2) = '1' then 'Young Adults'
+  	when substring(segment, 2) = '2' then 'Middle Aged'
+  	when substring(segment, 2) = '3' OR substring(segment, 2) = '4' then 'Retirees'
+  	else NULL end as age_band,
+  case when substring(segment, 1,1) ='C' then 'Couples'
+  	when substring(segment, 1,1) = 'F' then 'Families'
+  	else NULL end as demographic,
+ cast(cast(sales as float)/transactions as decimal(5,2)) as avg_transaction
+into clean_weekly_sales
+  from weekly_sales;
+
