@@ -43,3 +43,6 @@ select clean_week_date as week_date,
 
 from clean_date limit 5;
 --select * from clean_date limit 5;
+
+
+--alternatively can use this as an inserted table by using 'DROP TABLE IF EXISTS clean_weekly_sales; and 'into clean_weekly_sales' in place of CTE commands.
