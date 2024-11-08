@@ -15,7 +15,7 @@ Which platform, region, segment and customer types were the most impacted by thi
 What can we do about future introduction of similar sustainability updates to the business to minimise impact on sales?
 
 ## Entities
-<img src = "">
+<img src = "https://github.com/lion-star-gold/8-week-SQL-challenge/blob/main/Case%20Study%205%20-%20Data%20Mart/table.png">
 
 ## Case Study Questions
 
