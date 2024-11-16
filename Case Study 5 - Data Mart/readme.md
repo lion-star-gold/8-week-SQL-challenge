@@ -21,6 +21,22 @@ What can we do about future introduction of similar sustainability updates to th
 
 A - Data Cleansing
 
+Using the instructions on the challenge page, a new table, 'clean_weekly_sales' was created to clean the varchar column 'week_date' to the date format column 'clean_week_date', added week_number, month_number, calendar_year, new readable columns age_band and demographic. Nulls are updated to "unknown", and avg_transaction created. The top 10 entries are given below.
+
+| clean_week_date | age_band    | demographic | avg_transaction | week_number | month_number | calendar_year |
+|-----------------|-------------|-------------|-----------------|-------------|--------------|---------------|
+| 2020-08-31      | Retirees    | Couples     | 30.31           | 36          | 8            | 2020          |
+| 2020-08-31      | Young Adults| Families    | 31.56           | 36          | 8            | 2020          |
+| 2020-08-31      | null        | null        | 31.20           | 36          | 8            | 2020          |
+| 2020-08-31      | Young Adults| Couples     | 31.42           | 36          | 8            | 2020          |
+| 2020-08-31      | Middle Aged | Couples     | 30.29           | 36          | 8            | 2020          |
+| 2020-08-31      | Middle Aged | Families    | 182.54          | 36          | 8            | 2020          |
+| 2020-08-31      | Retirees    | Families    | 206.64          | 36          | 8            | 2020          |
+| 2020-08-31      | Young Adults| Families    | 172.11          | 36          | 8            | 2020          |
+| 2020-08-31      | Middle Aged | Families    | 155.84          | 36          | 8            | 2020          |
+| 2020-08-31      | Retirees    | Couples     | 35.02           | 36          | 8            | 2020          |
+
+
 B - Data Exploration
 
 C - Before & After Analysis
