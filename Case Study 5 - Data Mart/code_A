@@ -25,10 +25,10 @@ select  *,
   from weekly_sales 
 )
 
-select clean_week_date, age_band, demographic, avg_transaction,
+select 
 date_part('week', clean_week_date) as week_number,
     date_part('month', clean_week_date) as month_number,
-    date_part('year', clean_week_date) as calendar_year
+    date_part('year', clean_week_date) as calendar_year, *
 into clean_weekly_sales from clean_date;
 
 --show table
