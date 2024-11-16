@@ -5,14 +5,18 @@ select distinct to_char(clean_week_date, 'Day') as DAY_NAME, count(to_char(clean
 from clean_weekly_sales
 group by DAY_NAME order by COUNT desc
 
-| day_name | count |
-|----------|-------|
-| Thursday | 3805  |
-| Saturday | 3568  |
-| Sunday   | 3088  |
-| Monday   | 2378  |
-| Tuesday  | 2141  |
-| Wednesday| 1188  |
-| Friday   | 949   |
+--2. What range of week numbers are missing from the dataset?
+select distinct week_number from clean_weekly_sales order by week_number;
+--weeks 1-31, 37-52 are missing.
+
+--3. How many total transactions were there for each year in the dataset?
+select 
+distinct calendar_year, 
+sum(transactions) 
+from clean_weekly_sales 
+group by calendar_year;
+--my code must be off as all the years are counted as 2020. hmm.
+
+--4. What is the total sales for each region for each month?
 
 
