@@ -1,17 +1,8 @@
 -- this code is written in postgresql in the dbfiddle editor linked on the challenge page
 
-SELECT
-  column_name,
-  data_type,
-  character_maximum_length,
-  is_nullable,
-  column_default
-FROM
-  information_schema.columns
-WHERE
-  table_name = 'weekly_sales';--this snippet returns all tables column names and data types.
+drop table if exists clean_weekly_sales;
 
-----
+--create cte
 with clean_date as 
 (
 select  *,             
@@ -33,37 +24,12 @@ select  *,
   
   from weekly_sales 
 )
-select clean_week_date as week_date,
-	date_part('week', clean_week_date) as week_number,
+
+select clean_week_date, age_band, demographic, avg_transaction,
+date_part('week', clean_week_date) as week_number,
     date_part('month', clean_week_date) as month_number,
-    date_part('year', clean_week_date) as calendar_year,
-    age_band,
-    demographic,
-     avg_transaction
+    date_part('year', clean_week_date) as calendar_year
+into clean_weekly_sales from clean_date;
 
-from clean_date limit 5;
---select * from clean_date limit 5;
-
-
---alternatively can use this as an inserted table by using 'DROP TABLE IF EXISTS clean_weekly_sales; and 'into clean_weekly_sales' in place of CTE commands. as follows:
-DROP TABLE IF EXISTS clean_weekly_sales;
-
-select  *,             
-	to_date(
-    concat(case when length(split_part(week_date, '/', 1)) = 1 then concat('0', split_part(week_date, '/', 1))
-			else split_part(week_date, '/', 1) end,
-              case when length(split_part('31/8/20', '/', 2)) = 1 then concat('0', split_part('31/8/20', '/', 2))
-              	else split_part('31/8/20', '/', 2) end, 
-              split_part('31/8/20', '/', 3)
-              ),  'DDMMYY')as clean_week_date,
-  case when substring(segment, 2) = '1' then 'Young Adults'
-  	when substring(segment, 2) = '2' then 'Middle Aged'
-  	when substring(segment, 2) = '3' OR substring(segment, 2) = '4' then 'Retirees'
-  	else NULL end as age_band,
-  case when substring(segment, 1,1) ='C' then 'Couples'
-  	when substring(segment, 1,1) = 'F' then 'Families'
-  	else NULL end as demographic,
- cast(cast(sales as float)/transactions as decimal(5,2)) as avg_transaction
-into clean_weekly_sales
-  from weekly_sales;
-
+--show table
+select * from clean_weekly_sales limit 10;
