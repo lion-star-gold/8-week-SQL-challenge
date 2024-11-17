@@ -32,3 +32,18 @@ platform,
 sum(transactions)
 from clean_weekly_sales group by platform;
 
+--6. What is the percentage of sales for Retail vs Shopify for each month?
+select
+calendar_year,
+month_number,
+platform,
+sum(sales) over (PARTITION BY month_number,calendar_year,platform order by platform  ) as sale_monthly,
+        100 * CAST(sum(sales) over (PARTITION BY month_number,calendar_year,platform order by platform  ) AS FLOAT)  
+            /  (sum(sales) over (PARTITION BY calendar_year,platform order by platform  )) AS Percent_sales_monthly
+            
+from clean_weekly_sales
+group by calendar_year, month_number, platform;
+--I'm struggling getting the 'partition by' in this code to work. I need to revisit this.
+
+
+
