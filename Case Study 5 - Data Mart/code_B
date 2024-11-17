@@ -18,5 +18,11 @@ group by calendar_year;
 --my code must be off as all the years are counted as 2020. hmm.
 
 --4. What is the total sales for each region for each month?
-
+select
+calendar_year,
+month_number,
+region,
+sum(sales)
+from clean_weekly_sales
+group by calendar_year,month_number, region;
 
