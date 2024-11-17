@@ -45,5 +45,7 @@ from clean_weekly_sales
 group by calendar_year, month_number, platform;
 --I'm struggling getting the 'partition by' in this code to work. I need to revisit this.
 
+--7. What is the percentage of sales by demographic for each year in the dataset?
+--will use a similar partition by clause, I will revisit this.
 
 
