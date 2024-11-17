@@ -48,4 +48,13 @@ group by calendar_year, month_number, platform;
 --7. What is the percentage of sales by demographic for each year in the dataset?
 --will use a similar partition by clause, I will revisit this.
 
+--8. Which age_band and demographic values contribute the most to Retail sales?
+select 
+age_band,
+demographic,
+sum(sales) as sumofsales
+from clean_weekly_sales
+group by age_band, demographic
+order by sum(sales) desc
+
 
