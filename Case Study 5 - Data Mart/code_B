@@ -57,4 +57,5 @@ from clean_weekly_sales
 group by age_band, demographic
 order by sum(sales) desc
 
-
+--9. Can we use the avg_transaction column to find the average transaction size for each year for Retail vs Shopify? If not - how would you calculate it instead?
+--I don't have the brainpower to do this right now.
